@@ -7,10 +7,23 @@ const Search = ({ search, setInput }) => {
 
   return (
     <div className="search">
-      <input className="input" onChange={input} type="text" />
-      <button className="btnInput" onClick={search}>
-        <i className="bi bi-search"></i>
-      </button>
+      <form>
+        <input
+          className="input"
+          onChange={input}
+          type="text"
+          placeholder="要搜尋什麼圖片"
+        />
+        <button
+          className="btnInput"
+          onClick={(e) => {
+            e.preventDefault(); // 防止表單提交
+            search();
+          }}
+        >
+          <i className="bi bi-search"></i>
+        </button>
+      </form>
     </div>
   );
 };

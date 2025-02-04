@@ -2,19 +2,46 @@
   transition: 0.5s;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px black solid;
+}
+.header img {
+  height: 5rem;
+}
+.header .about {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+.header .about:hover {
+  color: rgb(100, 180, 255);
+}
+
 .search {
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
+}
+.search form {
+  display: flex;
+  align-items: center;
 }
 .search .input {
   height: 3rem;
   width: 20rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-left: 0.8rem;
   border-radius: 0.5rem 0 0 0.5rem;
 }
 .search .btnInput {
   width: 4rem;
+  height: 100%;
   font-size: 1.2rem;
   font-weight: 600;
   background-color: white;
@@ -26,7 +53,7 @@
 }
 .search .btnInput:hover {
   color: black;
-  background-color: lightgray;
+  background-color: rgb(100, 180, 255);
 }
 
 .pictures {
@@ -37,6 +64,7 @@
 
 .picture {
   margin: auto;
+  margin-bottom: 2rem;
 }
 .picture .img {
   width: 25rem;
@@ -58,7 +86,7 @@
 }
 
 .more {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -73,6 +101,22 @@
   cursor: pointer;
 }
 .more button:hover {
-  background-color: lightgray;
+  background-color: rgb(100, 180, 255);
   color: black;
+}
+
+.aboutPage {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.aboutPage img {
+  height: 20rem;
+  margin-right: 2rem;
+}
+.aboutPage p {
+  font-size: 1.5rem;
+}
+.aboutPage a {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

@@ -4,17 +4,15 @@ import React from "react";
 const Layout = () => {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">首頁</Link>
-          </li>
-          <li>
-            <Link to="/about">關於我們</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="header">
+        <Link to="/">
+          <img src="./logo.png" />
+        </Link>
 
+        <Link to="/about" className="about">
+          關於網站
+        </Link>
+      </div>
       <Outlet />
     </div>
   );
